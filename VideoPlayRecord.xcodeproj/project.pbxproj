@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		04A127F41B86A3FF00964719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A127F31B86A3FF00964719 /* main.m */; };
 		04A127F71B86A3FF00964719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A127F61B86A3FF00964719 /* AppDelegate.m */; };
-		04A127FA1B86A3FF00964719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A127F91B86A3FF00964719 /* ViewController.m */; };
-		04A127FD1B86A3FF00964719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A127FB1B86A3FF00964719 /* Main.storyboard */; };
+		04A127FA1B86A3FF00964719 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A127F91B86A3FF00964719 /* MenuViewController.m */; };
 		04A127FF1B86A40000964719 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A127FE1B86A40000964719 /* Images.xcassets */; };
 		04A128021B86A40000964719 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A128001B86A40000964719 /* LaunchScreen.xib */; };
 		04A1280E1B86A40000964719 /* VideoPlayRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1280D1B86A40000964719 /* VideoPlayRecordTests.m */; };
+		04A1281C1B86AC3700964719 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1281B1B86AC3700964719 /* AVFoundation.framework */; };
+		04A1281F1B86ADCF00964719 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1281E1B86ADCF00964719 /* PlayVideoViewController.m */; };
+		04A128211B86BBC300964719 /* Clara.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04A128191B86A6E900964719 /* Clara.mp4 */; };
+		04A128241B86C1F100964719 /* Clara2256.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 04A128231B86C1EA00964719 /* Clara2256.m4v */; };
+		04A128271B86D5AC00964719 /* RecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A128261B86D5AC00964719 /* RecordVideoViewController.m */; };
+		04A1282A1B86D9B900964719 /* PlayVideoWithAVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A128291B86D9B900964719 /* PlayVideoWithAVViewController.m */; };
+		04A128361B86ECA100964719 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A128351B86ECA100964719 /* MediaPlayer.framework */; };
+		04A1283A1B86FDCF00964719 /* MergeVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A128391B86FDCF00964719 /* MergeVideosViewController.m */; };
+		04A1283D1B87A51200964719 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1283C1B87A51200964719 /* CoreMedia.framework */; };
+		04A1283F1B87A5AA00964719 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1283E1B87A5AA00964719 /* AssetsLibrary.framework */; };
+		04A128421B8A46BF00964719 /* AnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A128411B8A46BF00964719 /* AnimationsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +42,29 @@
 		04A127F31B86A3FF00964719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04A127F51B86A3FF00964719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04A127F61B86A3FF00964719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04A127F81B86A3FF00964719 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04A127F91B86A3FF00964719 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04A127FC1B86A3FF00964719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04A127F81B86A3FF00964719 /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		04A127F91B86A3FF00964719 /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		04A127FE1B86A40000964719 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04A128011B86A40000964719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04A128071B86A40000964719 /* VideoPlayRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A1280C1B86A40000964719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A1280D1B86A40000964719 /* VideoPlayRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayRecordTests.m; sourceTree = "<group>"; };
+		04A128191B86A6E900964719 /* Clara.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Clara.mp4; sourceTree = "<group>"; };
+		04A1281B1B86AC3700964719 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04A1281D1B86ADCF00964719 /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
+		04A1281E1B86ADCF00964719 /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
+		04A128231B86C1EA00964719 /* Clara2256.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Clara2256.m4v; sourceTree = "<group>"; };
+		04A128251B86D5AC00964719 /* RecordVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordVideoViewController.h; sourceTree = "<group>"; };
+		04A128261B86D5AC00964719 /* RecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVideoViewController.m; sourceTree = "<group>"; };
+		04A128281B86D9B900964719 /* PlayVideoWithAVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoWithAVViewController.h; sourceTree = "<group>"; };
+		04A128291B86D9B900964719 /* PlayVideoWithAVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoWithAVViewController.m; sourceTree = "<group>"; };
+		04A128351B86ECA100964719 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		04A128381B86FDCF00964719 /* MergeVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeVideosViewController.h; sourceTree = "<group>"; };
+		04A128391B86FDCF00964719 /* MergeVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeVideosViewController.m; sourceTree = "<group>"; };
+		04A1283C1B87A51200964719 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		04A1283E1B87A5AA00964719 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		04A128401B8A46BF00964719 /* AnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsViewController.h; sourceTree = "<group>"; };
+		04A128411B8A46BF00964719 /* AnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A1283F1B87A5AA00964719 /* AssetsLibrary.framework in Frameworks */,
+				04A1283D1B87A51200964719 /* CoreMedia.framework in Frameworks */,
+				04A128361B86ECA100964719 /* MediaPlayer.framework in Frameworks */,
+				04A1281C1B86AC3700964719 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,10 @@
 		04A127E51B86A3FF00964719 = {
 			isa = PBXGroup;
 			children = (
+				04A1283E1B87A5AA00964719 /* AssetsLibrary.framework */,
+				04A1283C1B87A51200964719 /* CoreMedia.framework */,
+				04A128351B86ECA100964719 /* MediaPlayer.framework */,
+				04A1281B1B86AC3700964719 /* AVFoundation.framework */,
 				04A127F01B86A3FF00964719 /* VideoPlayRecord */,
 				04A1280A1B86A40000964719 /* VideoPlayRecordTests */,
 				04A127EF1B86A3FF00964719 /* Products */,
@@ -83,11 +116,10 @@
 			children = (
 				04A127F51B86A3FF00964719 /* AppDelegate.h */,
 				04A127F61B86A3FF00964719 /* AppDelegate.m */,
-				04A127F81B86A3FF00964719 /* ViewController.h */,
-				04A127F91B86A3FF00964719 /* ViewController.m */,
-				04A127FB1B86A3FF00964719 /* Main.storyboard */,
+				04A128171B86A69400964719 /* Controllers */,
+				04A128181B86A6AB00964719 /* Views */,
+				04A1281A1B86A6FE00964719 /* VideoAssets */,
 				04A127FE1B86A40000964719 /* Images.xcassets */,
-				04A128001B86A40000964719 /* LaunchScreen.xib */,
 				04A127F11B86A3FF00964719 /* Supporting Files */,
 			);
 			path = VideoPlayRecord;
@@ -117,6 +149,90 @@
 				04A1280C1B86A40000964719 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04A128171B86A69400964719 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04A1282E1B86E9FE00964719 /* Menu */,
+				04A128301B86EA1800964719 /* PlayMediaPlayer */,
+				04A128311B86EA3200964719 /* PlayAVFoundation */,
+				04A128371B86FCD300964719 /* RecordVideo */,
+				04A1283B1B86FDD700964719 /* MergeVideos */,
+				04A128431B8A46C500964719 /* Animations */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		04A128181B86A6AB00964719 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04A128001B86A40000964719 /* LaunchScreen.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		04A1281A1B86A6FE00964719 /* VideoAssets */ = {
+			isa = PBXGroup;
+			children = (
+				04A128191B86A6E900964719 /* Clara.mp4 */,
+				04A128231B86C1EA00964719 /* Clara2256.m4v */,
+			);
+			name = VideoAssets;
+			sourceTree = "<group>";
+		};
+		04A1282E1B86E9FE00964719 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				04A127F81B86A3FF00964719 /* MenuViewController.h */,
+				04A127F91B86A3FF00964719 /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		04A128301B86EA1800964719 /* PlayMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				04A1281D1B86ADCF00964719 /* PlayVideoViewController.h */,
+				04A1281E1B86ADCF00964719 /* PlayVideoViewController.m */,
+			);
+			name = PlayMediaPlayer;
+			sourceTree = "<group>";
+		};
+		04A128311B86EA3200964719 /* PlayAVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				04A128281B86D9B900964719 /* PlayVideoWithAVViewController.h */,
+				04A128291B86D9B900964719 /* PlayVideoWithAVViewController.m */,
+			);
+			name = PlayAVFoundation;
+			sourceTree = "<group>";
+		};
+		04A128371B86FCD300964719 /* RecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				04A128251B86D5AC00964719 /* RecordVideoViewController.h */,
+				04A128261B86D5AC00964719 /* RecordVideoViewController.m */,
+			);
+			name = RecordVideo;
+			sourceTree = "<group>";
+		};
+		04A1283B1B86FDD700964719 /* MergeVideos */ = {
+			isa = PBXGroup;
+			children = (
+				04A128381B86FDCF00964719 /* MergeVideosViewController.h */,
+				04A128391B86FDCF00964719 /* MergeVideosViewController.m */,
+			);
+			name = MergeVideos;
+			sourceTree = "<group>";
+		};
+		04A128431B8A46C500964719 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				04A128401B8A46BF00964719 /* AnimationsViewController.h */,
+				04A128411B8A46BF00964719 /* AnimationsViewController.m */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +315,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A127FD1B86A3FF00964719 /* Main.storyboard in Resources */,
+				04A128241B86C1F100964719 /* Clara2256.m4v in Resources */,
+				04A128211B86BBC300964719 /* Clara.mp4 in Resources */,
 				04A128021B86A40000964719 /* LaunchScreen.xib in Resources */,
 				04A127FF1B86A40000964719 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A127FA1B86A3FF00964719 /* ViewController.m in Sources */,
+				04A1281F1B86ADCF00964719 /* PlayVideoViewController.m in Sources */,
+				04A127FA1B86A3FF00964719 /* MenuViewController.m in Sources */,
+				04A1283A1B86FDCF00964719 /* MergeVideosViewController.m in Sources */,
 				04A127F71B86A3FF00964719 /* AppDelegate.m in Sources */,
+				04A1282A1B86D9B900964719 /* PlayVideoWithAVViewController.m in Sources */,
+				04A128271B86D5AC00964719 /* RecordVideoViewController.m in Sources */,
 				04A127F41B86A3FF00964719 /* main.m in Sources */,
+				04A128421B8A46BF00964719 /* AnimationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +366,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04A127FB1B86A3FF00964719 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04A127FC1B86A3FF00964719 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04A128001B86A40000964719 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
