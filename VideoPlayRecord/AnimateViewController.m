@@ -83,7 +83,7 @@
 -(void)applyVideoEffectsToComposition:(AVMutableVideoComposition *)composition size:(CGSize)size
 {
     
-    UIImage *animationImage = [UIImage imageNamed:@"star.png"];;
+    UIImage *animationImage = [UIImage imageNamed:@"Mask"];;
     CALayer *overlayLayer1 = [CALayer layer];
     [overlayLayer1 setContents:(id)[animationImage CGImage]];
     overlayLayer1.frame = CGRectMake(size.width/2-64, size.height/2 + 200, 128, 128);
