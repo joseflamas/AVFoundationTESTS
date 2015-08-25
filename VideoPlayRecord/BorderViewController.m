@@ -175,6 +175,13 @@
                         ofTrack:[[self.asset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0]
                          atTime:kCMTimeZero error:nil];
     
+    // 3 - Video track
+    AVMutableCompositionTrack *audioTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio
+                                                                        preferredTrackID:kCMPersistentTrackID_Invalid];
+    [audioTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, self.asset.duration)
+                        ofTrack:[[self.asset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0]
+                         atTime:kCMTimeZero error:nil];
+    
     // 3.1 - Create AVMutableVideoCompositionInstruction
     AVMutableVideoCompositionInstruction *mainInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
     mainInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, self.asset.duration);
@@ -270,12 +277,9 @@
             }];
         }
         
-        [self.indicatorView stopAnimating];
     
-    } else {
-        
-        [self.indicatorView startAnimating];
     }
+
     
 }
 
