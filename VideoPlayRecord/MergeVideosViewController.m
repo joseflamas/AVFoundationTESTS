@@ -120,9 +120,10 @@
         [self.indicatorView startAnimating];
         
         AVMutableComposition *mixComposition = [[AVMutableComposition alloc] init];
+        //Video 1
         AVMutableCompositionTrack *firstTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo
                                                                             preferredTrackID:kCMPersistentTrackID_Invalid];
-        //Video 1
+        
         [firstTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, self.asset1.duration)
                             ofTrack:[[self.asset1 tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0] atTime:kCMTimeZero error:nil];
         

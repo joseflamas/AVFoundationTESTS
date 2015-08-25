@@ -24,6 +24,9 @@
 		04A1283D1B87A51200964719 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1283C1B87A51200964719 /* CoreMedia.framework */; };
 		04A1283F1B87A5AA00964719 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1283E1B87A5AA00964719 /* AssetsLibrary.framework */; };
 		04A128421B8A46BF00964719 /* AnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A128411B8A46BF00964719 /* AnimationsViewController.m */; };
+		04A1284D1B8BAAD900964719 /* BorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1284C1B8BAAD900964719 /* BorderViewController.m */; };
+		04A128501B8BAB4400964719 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1284F1B8BAB4400964719 /* OverlayViewController.m */; };
+		04A128531B8C2C3500964719 /* Clara5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04A128521B8C2BA000964719 /* Clara5.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,11 @@
 		04A1283E1B87A5AA00964719 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		04A128401B8A46BF00964719 /* AnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsViewController.h; sourceTree = "<group>"; };
 		04A128411B8A46BF00964719 /* AnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsViewController.m; sourceTree = "<group>"; };
+		04A1284B1B8BAAD900964719 /* BorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorderViewController.h; sourceTree = "<group>"; };
+		04A1284C1B8BAAD900964719 /* BorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorderViewController.m; sourceTree = "<group>"; };
+		04A1284E1B8BAB4400964719 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
+		04A1284F1B8BAB4400964719 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
+		04A128521B8C2BA000964719 /* Clara5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Clara5.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,7 @@
 		04A1281A1B86A6FE00964719 /* VideoAssets */ = {
 			isa = PBXGroup;
 			children = (
+				04A128521B8C2BA000964719 /* Clara5.mp4 */,
 				04A128191B86A6E900964719 /* Clara.mp4 */,
 				04A128231B86C1EA00964719 /* Clara2256.m4v */,
 			);
@@ -231,8 +240,28 @@
 			children = (
 				04A128401B8A46BF00964719 /* AnimationsViewController.h */,
 				04A128411B8A46BF00964719 /* AnimationsViewController.m */,
+				04A1284A1B8B7C8100964719 /* Border */,
+				04A128511B8BAB5600964719 /* Overlay */,
 			);
 			name = Animations;
+			sourceTree = "<group>";
+		};
+		04A1284A1B8B7C8100964719 /* Border */ = {
+			isa = PBXGroup;
+			children = (
+				04A1284B1B8BAAD900964719 /* BorderViewController.h */,
+				04A1284C1B8BAAD900964719 /* BorderViewController.m */,
+			);
+			name = Border;
+			sourceTree = "<group>";
+		};
+		04A128511B8BAB5600964719 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				04A1284E1B8BAB4400964719 /* OverlayViewController.h */,
+				04A1284F1B8BAB4400964719 /* OverlayViewController.m */,
+			);
+			name = Overlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A128531B8C2C3500964719 /* Clara5.mp4 in Resources */,
 				04A128241B86C1F100964719 /* Clara2256.m4v in Resources */,
 				04A128211B86BBC300964719 /* Clara.mp4 in Resources */,
 				04A128021B86A40000964719 /* LaunchScreen.xib in Resources */,
@@ -341,9 +371,11 @@
 				04A1283A1B86FDCF00964719 /* MergeVideosViewController.m in Sources */,
 				04A127F71B86A3FF00964719 /* AppDelegate.m in Sources */,
 				04A1282A1B86D9B900964719 /* PlayVideoWithAVViewController.m in Sources */,
+				04A128501B8BAB4400964719 /* OverlayViewController.m in Sources */,
 				04A128271B86D5AC00964719 /* RecordVideoViewController.m in Sources */,
 				04A127F41B86A3FF00964719 /* main.m in Sources */,
 				04A128421B8A46BF00964719 /* AnimationsViewController.m in Sources */,
+				04A1284D1B8BAAD900964719 /* BorderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -135,12 +135,14 @@
     
     NSString *vid1 = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Clara.mp4"];
     NSString *vid2 = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Clara2256.m4v"];
+    NSString *vid3 = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Clara5.mp4"];
     UISaveVideoAtPathToSavedPhotosAlbum(vid1, nil, nil, nil);
     UISaveVideoAtPathToSavedPhotosAlbum(vid2, nil, nil, nil);
+    UISaveVideoAtPathToSavedPhotosAlbum(vid3, nil, nil, nil);
     
     [self.loadVideostoCameraRollButton setEnabled:NO];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Videos Loaded" message:@"Two example videos where saved in the camera roll for testing purposes" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Videos Loaded" message:@"Three example videos where saved in the camera roll for testing purposes" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
 
 }
