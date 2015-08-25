@@ -164,26 +164,6 @@
         [overlayLayer2 addAnimation:animation forKey:@"scale"];
     }
     
-    CABasicAnimation *animation =
-    [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    animation.duration=0.5;
-    animation.repeatCount=10;
-    animation.autoreverses=YES;
-    // animate from half size to full size
-    animation.fromValue=[NSNumber numberWithFloat:0.5];
-    animation.toValue=[NSNumber numberWithFloat:1.0];
-    animation.beginTime = AVCoreAnimationBeginTimeAtZero;
-    [overlayLayer1 addAnimation:animation forKey:@"scale"];
-    
-    animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    animation.duration=1.0;
-    animation.repeatCount=5;
-    animation.autoreverses=YES;
-    // animate from half size to full size
-    animation.fromValue=[NSNumber numberWithFloat:0.5];
-    animation.toValue=[NSNumber numberWithFloat:1.0];
-    animation.beginTime = AVCoreAnimationBeginTimeAtZero;
-    [overlayLayer2 addAnimation:animation forKey:@"scale"];
     
     // 5
     CALayer *parentLayer = [CALayer layer];
