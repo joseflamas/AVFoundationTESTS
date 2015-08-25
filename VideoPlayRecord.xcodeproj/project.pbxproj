@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04949B4A1B8CDA01008F5E1C /* SubtitlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04949B491B8CDA01008F5E1C /* SubtitlesViewController.m */; };
+		04949B4F1B8CEB7F008F5E1C /* TiltViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04949B4E1B8CEB7F008F5E1C /* TiltViewController.m */; };
+		04949B521B8CECD5008F5E1C /* AnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04949B511B8CECD5008F5E1C /* AnimateViewController.m */; };
 		04A127F41B86A3FF00964719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A127F31B86A3FF00964719 /* main.m */; };
 		04A127F71B86A3FF00964719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A127F61B86A3FF00964719 /* AppDelegate.m */; };
 		04A127FA1B86A3FF00964719 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A127F91B86A3FF00964719 /* MenuViewController.m */; };
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04949B481B8CDA01008F5E1C /* SubtitlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtitlesViewController.h; sourceTree = "<group>"; };
+		04949B491B8CDA01008F5E1C /* SubtitlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtitlesViewController.m; sourceTree = "<group>"; };
+		04949B4D1B8CEB7F008F5E1C /* TiltViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiltViewController.h; sourceTree = "<group>"; };
+		04949B4E1B8CEB7F008F5E1C /* TiltViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiltViewController.m; sourceTree = "<group>"; };
+		04949B501B8CECD5008F5E1C /* AnimateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateViewController.h; sourceTree = "<group>"; };
+		04949B511B8CECD5008F5E1C /* AnimateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateViewController.m; sourceTree = "<group>"; };
 		04A127EE1B86A3FF00964719 /* VideoPlayRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A127F21B86A3FF00964719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A127F31B86A3FF00964719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +106,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04949B4B1B8CDA06008F5E1C /* Subtitles */ = {
+			isa = PBXGroup;
+			children = (
+				04949B481B8CDA01008F5E1C /* SubtitlesViewController.h */,
+				04949B491B8CDA01008F5E1C /* SubtitlesViewController.m */,
+			);
+			name = Subtitles;
+			sourceTree = "<group>";
+		};
+		04949B4C1B8CEB6B008F5E1C /* Tilt */ = {
+			isa = PBXGroup;
+			children = (
+				04949B4D1B8CEB7F008F5E1C /* TiltViewController.h */,
+				04949B4E1B8CEB7F008F5E1C /* TiltViewController.m */,
+			);
+			name = Tilt;
+			sourceTree = "<group>";
+		};
+		04949B531B8CECDB008F5E1C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				04949B501B8CECD5008F5E1C /* AnimateViewController.h */,
+				04949B511B8CECD5008F5E1C /* AnimateViewController.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
 		04A127E51B86A3FF00964719 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +278,9 @@
 				04A128411B8A46BF00964719 /* AnimationsViewController.m */,
 				04A1284A1B8B7C8100964719 /* Border */,
 				04A128511B8BAB5600964719 /* Overlay */,
+				04949B4B1B8CDA06008F5E1C /* Subtitles */,
+				04949B4C1B8CEB6B008F5E1C /* Tilt */,
+				04949B531B8CECDB008F5E1C /* Animation */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -370,9 +409,12 @@
 				04A1281F1B86ADCF00964719 /* PlayVideoViewController.m in Sources */,
 				04A127FA1B86A3FF00964719 /* MenuViewController.m in Sources */,
 				04A1283A1B86FDCF00964719 /* MergeVideosViewController.m in Sources */,
+				04949B4A1B8CDA01008F5E1C /* SubtitlesViewController.m in Sources */,
 				04A127F71B86A3FF00964719 /* AppDelegate.m in Sources */,
 				04A1282A1B86D9B900964719 /* PlayVideoWithAVViewController.m in Sources */,
 				04A128501B8BAB4400964719 /* OverlayViewController.m in Sources */,
+				04949B4F1B8CEB7F008F5E1C /* TiltViewController.m in Sources */,
+				04949B521B8CECD5008F5E1C /* AnimateViewController.m in Sources */,
 				04A128271B86D5AC00964719 /* RecordVideoViewController.m in Sources */,
 				04A127F41B86A3FF00964719 /* main.m in Sources */,
 				04A128421B8A46BF00964719 /* AnimationsViewController.m in Sources */,

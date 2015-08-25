@@ -9,6 +9,10 @@
 #import "AnimationsViewController.h"
 #import "BorderViewController.h"
 #import "OverlayViewController.h"
+#import "SubtitlesViewController.h"
+#import "TiltViewController.h"
+#import "AnimateViewController.h"
+
 
 @interface AnimationsViewController ()
 
@@ -127,18 +131,22 @@
 
 -(void)addSubtitletoVideo
 {
-    
+    SubtitlesViewController *svc = [[SubtitlesViewController alloc] init];
+    [self.navigationController pushViewController:svc animated:YES];
 }
 
 
 -(void)tiltVideo
 {
-    
+    TiltViewController *tvc = [[TiltViewController alloc] init];
+    [self.navigationController pushViewController:tvc animated:YES];
 }
 
 
 -(void)addAnimationtoVideo
 {
+    AnimateViewController *avc = [[AnimateViewController alloc]init];
+    [self.navigationController pushViewController:avc animated:YES];
     
 }
 
