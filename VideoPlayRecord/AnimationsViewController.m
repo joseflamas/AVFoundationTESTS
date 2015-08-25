@@ -8,6 +8,7 @@
 
 #import "AnimationsViewController.h"
 #import "BorderViewController.h"
+#import "OverlayViewController.h"
 
 @interface AnimationsViewController ()
 
@@ -119,7 +120,8 @@
 
 -(void)addOverlaytoVideo
 {
-    
+    OverlayViewController *ovc = [[OverlayViewController alloc] init];
+    [self.navigationController pushViewController:ovc animated:YES];
 }
 
 
